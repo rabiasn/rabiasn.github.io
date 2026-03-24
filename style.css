@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #dbafc3;
+  line-height: 1.6;
+}
+nav {
+  background-color: #010045;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+nav ul li a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 18px 20px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  box-shadow: inset;
+  box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.3);
+  transition: background-color 0.2s;
+}
+
+nav ul li a:hover {
+  background-color: #a895a3;
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 40px 60px 10px 60px;
+  border-bottom: 3px solid #5a148c;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+/* ===== HAKKIMDA BÖLÜMÜ ===== */
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px 60px 50px 60px;
+  align-items: flex-start;
+}
+
+.circle-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #000000;
+  flex-shrink: 0;
+}
+
+.circle-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #ccc;
+}
+
+.personal-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+#hitap {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.personal-info p {
+  color: #555;
+  margin-bottom: 15px;
+  max-width: 500px;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  transition: opacity 0.2s;
+}
+
+.social img:hover {
+  opacity: 0.7;
+}
+
+.lyrics {
+  width: 100%;
+  background-color: #2c2c2c;
+  color: #f5f5f0;
+  padding: 20px 30px;
+  border-left: 6px solid #888;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* ===== EĞİTİM BÖLÜMÜ ===== */
+.section.edu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sub-section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px 25px;
+  min-width: 220px;
+  flex: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.education-school {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 6px 0;
+}
+
+.education-date {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+/* ===== İLGİ ALANLARI ===== */
+.section-field {
+  padding: 0 60px 50px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.top-field {
+  flex: 1;
+  min-width: 280px;
+}
+
+.top-field h2 {
+  font-size: 1.1rem;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #000000;
+  font-size: 0.95rem;
+}
+
+.field p {
+  min-width: 160px;
+}
+
+.field-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+/* ===== HOBİLER BÖLÜMÜ ===== */
+.section.parade {
+  align-items: flex-start;
+}
+
+.ranking {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.rank-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: #fff;
+  border-left: 5px solid #ccc;
+}
+
+.rank-item.first {
+  border-left-color: #57157d;
+}
+.rank-item.second {
+  border-left-color: #57157d;
+}
+.rank-item.third {
+  border-left-color: #57157d;
+}
+.rank-item.fourth {
+  border-left-color: #57157d;
+}
+.rank-item.fifth {
+  border-left-color: #57157d;
+}
+
+.rank-title {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ===== SADECE DEĞİŞEN KISIM ===== */
+.rank-img {
+  width: 70px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.rank-img.leader {
+  width: 80px;
+  height: 115px;
+}
+
+.rank-img:hover {
+  transform: scale(1.15);
+}
+
+/* Favori Filmler (lol düzeni) */
+.lol {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.rank-lol,
+.lol-champ {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+.rank-lol p,
+.lol-champ p {
+  flex: 1;
+  font-weight: 500;
+}
+
+.rank {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.champ {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #2c2c2c;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.85rem;
+}
